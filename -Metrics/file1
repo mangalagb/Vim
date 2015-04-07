@@ -1,0 +1,8 @@
+#! /bin/bash
+#script to find the total number of files, directories, number of .c files and number of .h files
+
+find . -type f | wc -l              # To find the number of files recursively
+find . -type d | wc -l              # To find the number of directories recursively
+find . -name "*.c" | wc -l          # To find the number of .c files recursively
+find . -name "*.h" | wc -l          # To find the number of .h files recursively
+
